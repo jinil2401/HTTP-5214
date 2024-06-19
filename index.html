@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Place Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Guess the Place!</h1>
+    <div class="game">
+        <div class="cards-container">
+            <div class="card" data-place="Distillery-District">
+                <div class="card-inner">
+                    <div class="card-front"></div>
+                    <div class="card-back">
+                        <img src="./image/Distillery.jpg" alt="Distillery District">
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-place="Nathan-Phillips">
+                <div class="card-inner">
+                    <div class="card-front"></div>
+                    <div class="card-back">
+                        <img src="./image/Nathan.jpg" alt="Nathan Phillips">
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-place="Polson-Pier">
+                <div class="card-inner">
+                    <div class="card-front"></div>
+                    <div class="card-back">
+                        <img src="./image/PolsonPier.jpeg" alt="Polson Pier">
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-place="Riverdale-Park">
+                <div class="card-inner">
+                    <div class="card-front"></div>
+                    <div class="card-back">
+                        <img src="./image/RiverdalePark.jpg" alt="Riverdale Park">
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-place="Yonge-Dundas">
+                <div class="card-inner">
+                    <div class="card-front"></div>
+                    <div class="card-back">
+                        <img src="./image/Yonge.jpg" alt="Yonge Dundas">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="guess-container">
+            <div class="timer">Time left: <span id="timeLeft">25</span> seconds</div>
+            <select id="placeGuess">
+                <option value="">Select Place...</option>
+                <option value="Distillery-District">Distillery-District</option>
+                <option value="Nathan-Phillips">Nathan-Phillips</option>
+                <option value="Yonge-Dundas">Yonge-Dundas</option>
+                <option value="Polson-Pier">Polson-Pier</option>
+                <option value="Riverdale-Park">Riverdale-Park</option>
+            </select>
+            <button id="guessButton">Guess</button>
+            <div>Player 1 Score: <span id="score1">0</span></div>
+            <div>Player 2 Score: <span id="score2">0</span></div>
+        </div>
+    </div>
+    <div id="messageDisplay" class="message-display"></div> <!-- New message display div -->
+    <script src="script.js"></script>
+</body>
+</html>
